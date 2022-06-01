@@ -53,7 +53,7 @@ impl CompUI {
             &tile_size,
             &Vector2::new(2.5, 2.5),
         )?;
-        let game_board_margin = Vector2::new(100.0, 100.0);
+        let game_board_margin = Vector2::new(10.0, 10.0);
 
         let game_board_visual = game_board.root();
         game_board_visual.SetRelativeOffsetAdjustment(Vector3::new(0.5, 0.5, 0.0))?;

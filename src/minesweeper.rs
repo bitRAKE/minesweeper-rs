@@ -217,12 +217,12 @@ impl Minesweeper {
         // Make a vector of coordinates to query based on current coordinate
         let base_vec: Vec<(i32, i32)> = vec![
             (cur_tile.x - 1, cur_tile.y - 1),
-            (cur_tile.x, cur_tile.y - 1),
+            (cur_tile.x,     cur_tile.y - 1),
             (cur_tile.x + 1, cur_tile.y - 1),
             (cur_tile.x - 1, cur_tile.y),
             (cur_tile.x + 1, cur_tile.y),
             (cur_tile.x - 1, cur_tile.y + 1),
-            (cur_tile.x, cur_tile.y + 1),
+            (cur_tile.x,     cur_tile.y + 1),
             (cur_tile.x + 1, cur_tile.y + 1),
         ];
 

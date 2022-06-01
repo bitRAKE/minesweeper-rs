@@ -74,7 +74,7 @@ impl CompAssets {
         );
         self.mine_state_brushes.insert(
             MineState::Flag,
-            compositor.CreateColorBrushWithColor(Colors::Orange()?)?,
+            compositor.CreateColorBrushWithColor(Colors::DarkRed()?)?,
         );
         self.mine_state_brushes.insert(
             MineState::Question,

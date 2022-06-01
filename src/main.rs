@@ -29,8 +29,8 @@ fn run() -> Result<()> {
     unsafe { RoInitialize(RO_INIT_SINGLETHREADED)? };
     let _controller = create_dispatcher_queue_controller_for_current_thread()?;
 
-    let window_width = 800;
-    let window_height = 600;
+    let window_width = 512;
+    let window_height = 512;
 
     let window_size = Vector2 {
         X: window_width as f32,

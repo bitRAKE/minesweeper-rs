@@ -3,6 +3,13 @@ name = "minesweeper-rs"
 version = "0.1.0"
 authors = ["Robert Mikhayelyan <rob.mikh@outlook.com>"]
 edition = "2021"
+description = "A port of robmikh/Minesweeper using windows-rs."
+license = "MIT License"
+readme = "README.md"
+keywords = ["minesweeper", "winrt", "windows-rs"]
+categories = ["game-development"]
+repository = "https://github.com/robmikh/minesweeper-rs"
+homepage = "https://github.com/robmikh"
 
 [dependencies]
 rand = "0.8.5"
@@ -26,3 +33,9 @@ features = [
 
 [features]
 show-mines = []
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+opt-level = "z"
